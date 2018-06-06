@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0"
+	name="koodam-feature">
+
+	<feature name="koodam-communication" version="${pom.version}">
+		<feature>scr</feature>
+		<bundle>mvn:koodam/koodam-communication/${pom.version}</bundle>
+	</feature>
+
+	<feature name="koodam-mongodb" version="${pom.version}">
+		<feature>scr</feature>
+		<bundle>mvn:org.mongodb/mongo-java-driver/${mongodb-driver.version}</bundle>
+		<bundle>mvn:koodam/koodam-mongodb-api/${pom.version}</bundle>
+		<bundle>mvn:koodam/koodam-mongodb-provider/${pom.version}</bundle>
+	</feature>
+
+	<feature name="koodam-config" version="${pom.version}">
+		<configfile finalname="/etc/KoodamMessageType-test.cfg"
+			override="true">
+			mvn:koodam/koodam-config/${pom.version}/cfg/KoodamMessageType-test
+		</configfile>
+		<configfile finalname="/etc/KoodamMessageType-test1.cfg"
+			override="true">
+			mvn:koodam/koodam-config/${pom.version}/cfg/KoodamMessageType-test1
+		</configfile>
+		<configfile finalname="/etc/in.koodam.mongodb.service.api.KoodamMongoProvider-test.cfg"
+			override="true">
+			mvn:koodam/koodam-config/${pom.version}/cfg/KoodamMongoProvider-test
+		</configfile>
+	</feature>
+
+</features>

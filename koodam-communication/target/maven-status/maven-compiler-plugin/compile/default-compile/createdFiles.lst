@@ -1,0 +1,9 @@
+in/koodam/communication/model/KoodamRequest.class
+in/koodam/communication/model/KoodamRequest$Builder.class
+in/koodam/communication/component/KoodamMessageTypeConfiguration.class
+in/koodam/communication/model/KoodamChannelInfo.class
+in/koodam/communication/model/KoodamResponse.class
+in/koodam/communication/service/api/KoodamMessageTypeFactory.class
+in/koodam/communication/component/KoodamMessageType.class
+in/koodam/communication/model/KoodamResponse$Builder.class
+in/koodam/communication/enums/MessageType.class

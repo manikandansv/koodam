@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1521506570199
+Build-Jdk: 1.8.0_92
+Built-By: manisv
+Bundle-ManifestVersion: 2
+Bundle-Name: koodam-entity-api
+Bundle-SymbolicName: koodam-entity-api
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: config.koodammessagetype;version="",in.koodam.communicat
+ ion.api;version="";uses:="in.koodam.communication.component",in.koodam.
+ communication.component;version="",in.koodam.communication.enums;versio
+ n="",in.koodam.communication.model;version="";uses:="in.koodam.communic
+ ation.component"
+Implementation-Version: 0.0.1-SNAPSHOT
+Import-Package: in.koodam.communication.component;version="${range;[==,+
+ )}"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/KoodamMessageType.xml
+Tool: Bnd-3.3.0.201609221906

@@ -1,0 +1,4 @@
+in/koodam/mongodb/component/config/MongoClientConfiguration.class
+in/koodam/mongodb/service/api/KoodamMongoProvider.class
+in/koodam/mongodb/service/api/KoodamMongoProviderFactory.class
+in/koodam/mongodb/service/api/KoodamMongoPersistenceManager.class
